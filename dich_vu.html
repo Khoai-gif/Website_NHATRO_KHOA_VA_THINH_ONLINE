@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dịch vụ</title>
+    <link rel="stylesheet" href="dich_vu.css">
+</head>
+<body>
+    <header>
+        <h2 class="logo">NhaTroKhoaThinh.com</h2>
+        <nav class ="navigation">
+            <a href ="trang_chu.html">Trang chủ</a>
+            <a href ="lien_he.html" class="btnlienhe-popup">Liên Hệ </a>
+            <a href ="dich_vu.html" class="btndichvu-popup">Dịch vụ </a>
+            <a href ="Quan-li-thue-phong.html">Tin đã lưu </a>
+            <input type="text" class="search-box" placeholder="Tìm kiếm...">
+            <a href="dang_nhap_dang_ky.html">
+                <button class="btnlogin-popup">Login</button>
+            </a>
+        </nav>
+    </header>
+
+    <div class="DIV-TONG">
+        <h1 style="color: red; text-align: center"><b>Các loại dịch vụ</b></h1>
+        
+        <div class="thanh-toan">
+            <h2 style="text-align: center; color: blue;">Các cách thanh toán</h2>
+
+            <div class="click-div" onclick="showImage('QR_T.jpg')">
+                <h3 style="text-align: center;"><b>QR của Thịnh</b></h3>
+                <img src="QR_T.jpg" alt="ảnh QR" style="width: 200px; height: 200px; border-radius: 15px">
+            </div>
+            
+            <div class="click-div2" onclick="showImage('QR_K.jpg')">
+                <h3 style="text-align: center;"><b>QR của Khoa</b></h3>
+                <img src="QR_K.jpg" alt="ảnh QR" style="width: 200px; height: 200px; border-radius: 15px">
+            </div>
+            
+            <!-- Overlay chung để hiển thị ảnh -->
+            <div class="overlay" id="imageOverlay" onclick="hideImage(event)">
+                <span class="close-btn" onclick="hideImage(event)">X</span>
+                <img id="overlayImage" src="" alt="Hình ảnh">
+            </div>            
+
+            <div>
+                <h3 style="text-align: center; position: absolute; bottom: 30px;"><b>Hoặc có thể qua phần liên hệ để được hỗ trợ!!!</b></h3>
+            </div>
+
+        </div>
+
+        <div class="dat-xe">
+            <h2 style="text-align: center; color: Blue;">Đặt xe thông qua các ứng dụng sau</h2>
+            
+            <div class="GRAB">
+                <h3 style="text-align:center"><b>GRAB</b></h3>
+                <a href="https://www.grab.com/vn/" target="_blank">
+                    <img src="grab.png" alt="ảnh grab"  class="grab">
+                </a>
+            </div>
+            
+            <div class="BEE">
+                <h3 style="text-align:center"><b>BEE</b></h3>
+                <a href="https://be.com.vn/#intro" target="_blank">
+                    <img src="bee.jpg" alt="ảnh bee" class="bee">
+                </a>
+            </div>
+
+            <div class="XANH-SM">
+                <h3 style="text-align: center;"><b>Xanh SM</b></h3>
+                <a href="https://www.xanhsm.com/" target="_blank">
+                    <img src="xanh-sm.jpg" alt="ảnh Xanh SM" class="xanh-sm">
+                </a>
+            </div>
+
+            <div class="VINASUN">
+                <h3 style="text-align: center;"><b>VinaSun</b></h3>
+                <a href="https://vinasun.vn/" target="_blank">
+                    <img src="VinaSun.png" alt="ảnh VinaSun" class="vina-sun">
+                </a>
+            </div>
+
+            <div class="MAILINH">
+                <h3 style="text-align: center;"><b>Mai Linh</b></h3>
+                <a href="https://mailinhbinhduong.vn/" target="_blank">
+                    <img src="Mai-linh.jpg" alt="ảnh Mai Linh" class="mai-linh">
+                </a>
+            </div>
+
+        </div>
+    </div>
+<script>
+    function showImage(imageSrc) {
+        let overlay = document.getElementById("imageOverlay");
+        let overlayImage = document.getElementById("overlayImage");
+    
+        overlayImage.src = imageSrc; // Gán ảnh được bấm vào overlay
+        overlay.style.display = "flex";
+    }
+    
+    function hideImage(event) {
+        let overlay = document.getElementById("imageOverlay");
+    
+        // Ẩn overlay khi nhấn vào vùng ngoài ảnh hoặc nút đóng
+        if (event.target === overlay || event.target.classList.contains("close-btn")) {
+            overlay.style.display = "none";
+        }
+    }
+    
+</script>
+    
+</body>
+</html>

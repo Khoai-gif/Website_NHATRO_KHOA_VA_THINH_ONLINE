@@ -1,0 +1,298 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: lavender;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+    cursor:pointer;
+}
+.hidden-content {
+    display: none; 
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .btntrangchu-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #080000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin-popup
+{
+    border-radius: 15px;
+    width: 65px;
+    height: 30px;
+    cursor:pointer;
+
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #fff;
+    color: black;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    background-color: rgb(253, 230, 229);
+}
+
+.DSNT
+{
+    transform: translate(100px, 80px);
+}
+
+.NT1 {
+    display: flex;
+    width: 600px;
+    height: 232px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.NT1-left {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.NT1-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.NT1-left img.active {
+    display: block;
+}
+
+.NT1-right {
+    flex: 7;
+    padding: 10px;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.prev {
+    left: 5px;
+}
+
+.next {
+    right: 5px;
+}
+
+.NT2 {
+    display: flex;
+    width: 600px;
+    height: 232px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.NT2-left {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.NT2-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.NT2-left img.active {
+    display: block;
+}
+
+.NT2-right {
+    flex: 7;
+    padding: 10px;
+}
+
+.NT3 {
+    display: flex;
+    width: 600px;
+    height: 232px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.NT3-left {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.NT3-left video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+
+.NT3-right {
+    flex: 7;
+    padding: 10px;
+}
+
+.NT4 {
+    display: flex;
+    width: 600px;
+    height: 232px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.NT4-left {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.NT4-left iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.NT4-right {
+    flex: 7;
+    padding: 10px;
+}
+
+.NT5 {
+    display: flex;
+    width: 600px;
+    height: 232px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.NT5-left {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.NT5-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.NT5-left img.active {
+    display: block;
+}
+
+.NT5-right {
+    flex: 7;
+    padding: 10px;
+}
+
+.NT6 {
+    display: flex;
+    width: 600px;
+    height: 232px;
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.NT6-left {
+    flex: 3;
+    position: relative;
+    overflow: hidden;
+}
+
+.NT6-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.NT6-left img.active {
+    display: block;
+}
+
+.NT6-right {
+    flex: 7;
+    padding: 10px;
+}

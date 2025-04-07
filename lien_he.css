@@ -1,0 +1,178 @@
+.Khung_lien_he
+{
+    width: 1175px;
+    height: 465px;
+    background: rgba(255, 255, 255, 0.998);
+    border-radius: 15px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+
+.name1
+{
+    transform: translate(680px, 10px);
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Sắp xếp phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu là toàn màn hình */
+    margin: 0; /* Loại bỏ margin mặc định */
+    overflow-x: hidden; /* Ẩn thanh cuộn ngang */
+    background-color: rgb(245, 200, 199);
+}
+
+.Anh
+{
+    display: flex;
+    width: 560px;
+    height: 360px;
+    transform: translate(0px, 50px);
+    border-radius: 30px;
+}
+
+.Khung_nhan
+{
+    transform: translate(465px, -340px);
+}
+
+.chu-nhan
+{
+    color: red;
+}
+
+.TEXT
+{
+    width: 665px;
+    vertical-align: top;
+}
+
+.submit
+{
+    background: rgb(111, 230, 111, 0.3);
+    border-radius: 20px;
+    border-color: green;
+    width: 160px;
+    height: 35px;
+    transform: translate(255px, 15px);
+    transition-duration: 0.5s;
+    transition: 0.5s;
+} 
+
+.Zalo-container 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    transform: translate(566px, -310px); /* Dịch toàn bộ khối */
+}
+
+.Zalo2, .Zalo1 
+{
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #1364aa;
+    border-radius: 15px;
+    width: 460px;
+    height: 50px;
+}
+
+.fb-container 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Khoảng cách giữa các nút */
+    transform: translate(566px, -300px); /* Dịch vị trí nếu cần */
+}
+
+.Facebook1, .Facebook2 
+{
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: #1877F2; /* Màu xanh Facebook */
+    border-radius: 15px;
+    width: 460px;
+    height: 50px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo {
+    font-size: 2em;
+    color: lavender;
+    user-select: none;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 6px;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation .btnlienhe-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #080000;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 0.5s;
+}
+
+.navigation .btnlogin-popup
+{
+    border-radius: 15px;
+    width: 70px;
+    height: 25px;
+}
+
+.navigation .btnlogin-popup:hover {
+    background: #fff;
+    color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}

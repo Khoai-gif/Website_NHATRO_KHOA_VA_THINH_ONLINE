@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng Tin Phòng Trọ</title>
+  <link rel="stylesheet" href="Dang_tin.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Đăng Tin Phòng Trọ</h2>
+    <form action="#" method="POST" class="form-container">
+      <label for="roomName">Tên phòng trọ:</label>
+      <input type="text" id="roomName" name="roomName" placeholder="Nhập tên phòng" required>
+
+      <label for="roomPrice">Giá thuê (VND):</label>
+      <input type="number" id="roomPrice" name="roomPrice" placeholder="Nhập giá thuê" required>
+
+      <label for="roomSize">Diện tích (m²):</label>
+      <input type="number" id="roomSize" name="roomSize" placeholder="Nhập diện tích phòng" required>
+
+      <label for="roomLocation">Địa chỉ phòng:</label>
+      <input type="text" id="roomLocation" name="roomLocation" placeholder="Nhập địa chỉ" required>
+
+      <label for="roomDescription">Mô tả phòng:</label>
+      <textarea id="roomDescription" name="roomDescription" rows="4" placeholder="Mô tả chi tiết phòng trọ" required></textarea>
+
+      <label for="roomImage">Hình ảnh phòng:</label>
+      <input type="file" id="roomImage" name="roomImage" accept="image/*">
+
+      <button type="submit" class="submit-btn">Đăng Tin</button>
+    </form>
+    <a href="trang_chu.html">← Quay lại trang chủ</a>
+  </div>
+</body>
+</html>
