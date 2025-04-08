@@ -89,12 +89,14 @@ body {
 
 .DIV-TONG
 {
+    position: relative;
     width: 1500px;
-    height: 465px;
+    height: 700px;
     background: rgba(255, 255, 255, 0.998);
     border-radius: 15px;
     margin-top: 100px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+    margin-bottom: 100px;
 }
 
 .grab, .bee, .xanh-sm, .vina-sun, .mai-linh
@@ -236,3 +238,56 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px white;
 }
+
+
+footer {
+    background-color: #001F3F; /* Xanh Navy */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #3EB489; /* Xanh Bạc Hà */
+    text-align: center;
+    width: 100vw;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.footer-column {
+    width: 22%; /* Chia 4 cột */
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #3EB489; /* Xanh Bạc Hà */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #3EB489; /* Xanh Bạc Hà */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white; /* Đổi sang trắng khi hover */
+}
+
+.payment-methods img, .social-icons img {
+    width: 40px;
+    margin-right: 8px;
+}
+

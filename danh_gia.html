@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liên hệ</title>
-    <link rel="stylesheet" href="lien_he.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Đánh giá</title>
+    <link rel="stylesheet" href="danh_gia.css">
 </head>
 <body>
     <header>
@@ -15,7 +14,7 @@
             <a href="lien_he.html" class="btnlienhe-popup">Liên Hệ</a>
             <a href="dich_vu.html">Dịch vụ</a>
             <a href="#">Tin đã lưu</a>
-            <a href="danh_gia.html">Đánh giá</a>
+            <a href="danh-gia.html" class="btndanhgia-popup">Đánh giá</a>
             <input type="text" class="search-box" placeholder="Tìm kiếm...">
             <a href="dang_nhap_dang_ky.html">
                 <button class="btnlogin-popup">Login</button>
@@ -23,42 +22,27 @@
         </nav>
     </header>
 
-    <div class="Khung_lien_he">
-        <div class="name1">
-            <h1>Liên hệ và Hỗ trợ</h1>
+    <div class="Khung_danh_gia">
+        <h2 style="text-align: center; margin-top: 20px;">Đánh giá dịch vụ của chúng tôi</h2>
+    
+        <div class="rating" id="rating" style="text-align: center; margin-top: 30px;">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5" data-desc="Tuyệt vời">★</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4" data-desc="Tốt">★</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3" data-desc="Bình thường">★</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2" data-desc="Tệ">★</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1" data-desc="Rất tệ">★</label>
         </div>
-
-        <div class="Anh">
-            <img src="Cham-soc-KH.jpg" class="HA" alt="Ảnh chăm sóc khách hàng">
+    
+        <div id="description" style="text-align: center; font-size: 18px; color: #333; margin-top: 10px; min-height: 24px;"></div>
+    
+        <div style="text-align: center; margin-top: 30px;">
+            <textarea placeholder="Viết đánh giá của bạn..." rows="5" cols="70" style="padding: 10px; font-size: 16px; border-radius: 8px; border: 1px solid #ccc;"></textarea>
         </div>
-
-        <div class="Khung_nhan">
-            <h2 class="chu-nhan">Để lại lời nhắn để được hỗ trợ!!!</h2>
-
-            <form action="" method="POST">
-                <input type="text" class="TEXT" name="Loi_nhan" placeholder="Để lại lời nhắn nếu cần để được hỗ trợ nhé khách iu <3">
-                <button type="submit" class="submit"><b>Xác nhận gửi</b></button>
-            </form>
-
-            <p id="successMsg" style="color: green; font-weight: bold;"></p>
-        </div>
-
-        <div class="Zalo-container">
-            <a href="https://zalo.me/0393668813" target="_blank" style="text-decoration: none; color: inherit;">
-                <div class="Zalo1"><b>💬Zalo:0393668813 (Thịnh)</b></div>
-            </a>
-            <a href="https://zalo.me/0908632656" target="_blank" style="text-decoration: none; color: inherit;">
-                <div class="Zalo2"><b>💬Zalo:0908632656 (Khoa)</b></div>
-            </a>
-        </div>
-
-        <div class="fb-container">
-            <a href="https://www.facebook.com/thinh.tan.9674/" target="_blank" style="text-decoration: none; color: inherit;">
-                <div class="Facebook1"><i class="fa-brands fa-facebook"></i><b> FB: Trương Tấn Thịnh</b></div>
-            </a>
-            <a href="https://www.facebook.com/trinh.khoa.9083?locale=vi_VN" target="_blank" style="text-decoration: none; color: inherit;">
-                <div class="Facebook2"><i class="fa-brands fa-facebook"></i><b> FB: Trịnh Phan Anh Khoa</b></div>
-            </a>
+    
+        <div style="text-align: center; margin-top: 20px;">
+            <button style="padding: 10px 25px; font-size: 16px; background-color: #ff9999; border: none; border-radius: 8px; color: white; cursor: pointer;">
+                Gửi đánh giá
+            </button>
         </div>
     </div>
 
@@ -108,7 +92,19 @@
         </div>
     </footer>
 
-    <script src="lien_he.js"></script>
-        
+    <script>
+        const labels = document.querySelectorAll('.rating label');
+        const descBox = document.getElementById('description');
+    
+        labels.forEach(label => {
+            label.addEventListener('mouseenter', () => {
+                descBox.textContent = label.getAttribute('data-desc');
+            });
+            label.addEventListener('mouseleave', () => {
+                descBox.textContent = '';
+            });
+        });
+    </script>
+
 </body>
 </html>

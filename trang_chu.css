@@ -88,10 +88,14 @@ body
     background-color: rgb(253, 230, 229);
 }
 
-.DSNT
-{
-    transform: translate(100px, 80px);
+.DSNT {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 100px; /* chừa khoảng cho footer */
+    margin-top: 100px;
 }
+
 
 .NT1 {
     display: flex;
@@ -296,3 +300,72 @@ body
     flex: 7;
     padding: 10px;
 }
+
+.bo-loc {
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    width: 360px;
+    height: 260px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    z-index: 10;
+}
+
+.bo-loc h3 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #001F3F; /* Xanh Navy */
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #3EB489; /* Xanh Bạc Hà */
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around; /* Chia đều khoảng cách */
+}
+
+.footer-column {
+    width: 22%; /* Chia 4 cột */
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #3EB489; /* Xanh Bạc Hà */
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    text-decoration: none;
+    color: #3EB489; /* Xanh Bạc Hà */
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-column ul li a:hover {
+    color: white; /* Đổi sang trắng khi hover */
+}
+
+.payment-methods img, .social-icons img {
+    width: 40px;
+    margin-right: 8px;
+}
+
