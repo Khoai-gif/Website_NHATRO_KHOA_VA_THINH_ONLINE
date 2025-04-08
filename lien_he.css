@@ -56,6 +56,9 @@ body {
     border-color: green;
     width: 160px;
     height: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
     transform: translate(255px, 15px);
     transition-duration: 0.5s;
     transition: 0.5s;
